@@ -1,0 +1,4 @@
+﻿audio_filepath,reference,prediction,language,provider
+/Users/pavanmantha/Pavans/PracticeExamples/DataScience_Practice/Advanced-AI-Apps/llm_wer_mini/data/0001_030.wav,यह है मोटा राजा।,यह है मोटा king।,hindi,openai
+/Users/pavanmantha/Pavans/PracticeExamples/DataScience_Practice/Advanced-AI-Apps/llm_wer_mini/data/0002_019.wav,मोटे राजा का है दुबला कुत्ता।,मोटे राजा का है दुबला कुत्त।,hindi,openai
+/Users/pavanmantha/Pavans/PracticeExamples/DataScience_Practice/Advanced-AI-Apps/llm_wer_mini/data/0003_002.wav,मोटा राजा व दुबला कुत्ता घूमने निकले।,मोटा king व दुबला कुत्ता घूमने निकले।,hindi,openai

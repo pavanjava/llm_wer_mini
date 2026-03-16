@@ -1,0 +1,9 @@
+.idea/
+.venv/
+__pycache__/
+*.pyc
+uv.lock
+*.iml
+outputs/
+*.csv
+!sample_input.csv
