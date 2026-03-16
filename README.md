@@ -1,4 +1,4 @@
-# LLM-WER Mini v2
+# LLM-WER Mini v0.1
 
 Lightweight LLM-based Word Error Rate (WER) and Character Error Rate (CER) evaluation for ASR systems, with special focus on Indic languages.
 
