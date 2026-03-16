@@ -106,3 +106,19 @@ llm-wer-mini/
 ├── sample_input.csv       # Example input
 └── README.md
 ```
+
+## What we took from Sarvam's repo (concept/approach):
+
+- The overall methodology — diff segments → ask LLM → recompute WER/CER
+- The SequenceMatcher-based diffing approach
+- The WER/CER computation logic using jiwer with max(m, n) clamping
+- The prompt template's structure and equivalence rules 1–4 (formatting, spoken/written, cross-script, phonetic contractions) — these were trimmed but the rules and examples are largely from the original
+
+## What we wrote fresh / changed significantly:
+
+- llm_providers.py — entirely new, Sarvam uses Vertex AI + OpenAI SDK with threading/workers; ours uses direct Gemini GenAI, OpenAI, and Anthropic SDKs
+- Section 5 (Semantic Translation Equivalence) — this is our addition, doesn't exist in Sarvam's prompt at all
+- Full sentence context in the LLM call — Sarvam only sends the segment pair, we send full_reference + full_prediction alongside
+- The normalization is simplified (no indic-nlp-library dependency)
+- No threading, no JSONL caching, no Google Sheets integration, no Pydantic validation
+- The CLI, the per-row provider override, the reasoning in logs — all new
