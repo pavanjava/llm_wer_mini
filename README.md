@@ -122,3 +122,5 @@ llm-wer-mini/
 - The normalization is simplified (no indic-nlp-library dependency)
 - No threading, no JSONL caching, no Google Sheets integration, no Pydantic validation
 - The CLI, the per-row provider override, the reasoning in logs — all new
+
+### contributions are welcome.
