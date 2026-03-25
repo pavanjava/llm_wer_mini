@@ -39,7 +39,7 @@ Override OpenAI/Anthropic models via `OPENAI_MODEL` / `ANTHROPIC_MODEL` env vars
 ## Setup
 
 ```bash
-pip install -r requirements.txt
+uv sync
 export GEMINI_API_KEY="your-key-here"
 ```
 
